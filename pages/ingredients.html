@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link href="../styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+        <title> Escoge tus ingredientes</title>
+    </head>
+ <header>
+        <div class="container">
+            <img src="../images/cakehouse.png" alt="cakelogo" class="logo" id="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">Acerca</a></li>
+                    <li><a href="../pages/ingredients.html">Tipos de ingredientes</a></li>
+                    <li><a href="../pages/admin.html">Administración</a></li>
+                    <li><a href="../pages/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        </header>
+    <body>
+
+
+        <h1>Escoge tus ingredientes</h1>
+        <hr>
+        <img src="../images/cakeing.jpg" alt="pasteles en una vitrina" width="700px" height="auto">
+        <hr>
+        <h2>Nuestros sabores fijos!</h2>
+        <div>
+            <table align="center">
+                <tr>
+                    <th>Sabor</th>
+                    <th>Precio</th>
+                    <th>Disponible al momento</th>
+                </tr>
+                <tr>
+                    <td id="itm1">Chocolate</td>
+                    <td>$20.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm2">Mousse</td>
+                    <td>$30.00</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td id="itm3">Vainilla</td>
+                    <td>$50.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm4">Tres leches</td>
+                    <td>$90.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm5">Strawberry</td>
+                    <td>$100.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm6">Sorpesa</td>
+                    <td>$200.00</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+<br>
+<hr>
+    <h3>Personaliza tu pastel con tus propios ingredientes!</h3>
+    <p>Estos son nuestros ingredientes al momento, si alguno falta, porfavor
+       te pedimos consideración y paciencia!<br> <br>Tambien considera que solo puedes mezclar 2 ingredientes!
+    </p>
+        <div>
+            <table align="center" width="40%">
+                <tr>
+                    <th>Sabor</th>
+                    <th>Precio</th>
+                    <th>Disponible al momento</th>
+                </tr>
+                <tr>
+                    <td id="itm1">Chocolate</td>
+                    <td>$4.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm2">Fresa</td>
+                    <td>$4.00</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td id="itm3">Vainilla</td>
+                    <td>$5.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm4">Cajeta</td>
+                    <td>$6.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm5">Chispas de chocolate</td>
+                    <td>$10.00</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td id="itm6">Crema</td>
+                    <td>$20.00</td>
+                    <td>Sí</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4 id="nosequeponer">¿Qué sabores te gustaría combinar?</h4>
+
+         <label for="selectorsabor" title="sabor" id="label1">Primer sabor<br></label>
+
+            <select id="selectorsabor" name="selectorsabor">
+                <optgroup label="Sabor">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Cajeta">Cajeta</option>
+                    <option value="Chispas de chocolate">Chispas de chocolate</option>
+                    <option value="Crema">Crema</option>
+                </optgroup>
+            </select>
+<br>
+<br>
+            <label for="selectorsabor2" title="sabor2" id="label2">Segundo sabor<br></label>
+            <select id="selectorsabor2" name="selectorsabor2" width="30px">
+                <optgroup label="Sabor2">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option selected value="Cajeta">Cajeta</option>
+                    <option value="Chispas de chocolate">Chispas de chocolate</option>
+                    <option value="Crema">Crema</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+<button>Enviar!</button>
+
+   <script src="./scripts/main.js"></script>
+    </body>
+</html>
